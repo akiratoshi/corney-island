@@ -238,7 +238,7 @@ points:
             tags:
               - key
               - thumb_key
-              - key_1_5u
+              - key_1_25u
           rows:
             home.key:
               led_prev: ULED_6
@@ -465,7 +465,7 @@ outlines:
       size: [kx, ky]
       operation: stack
     - what: rectangle
-      where: [key_1_5u]
+      where: [key_1_25u]
       size: [kx*1.5, ky]
       operation: stack
     - what: rectangle
@@ -483,7 +483,7 @@ outlines:
       size: [keycw, keych]
     - what: rectangle
       fillet: 2
-      where: [key_1_5u]
+      where: [key_1_25u]
       size: [keycw*1.5, keych]
   _hex_outline:
     - what: rectangle
