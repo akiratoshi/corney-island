@@ -181,6 +181,9 @@ points:
             stagger: -0.125 kp
             column_net: C5
           rows:
+            number.key:
+              led_prev: LED_22
+              led_next: LED_23
             top.key:
               led_prev: LED_3
               led_next: LED_4
@@ -190,7 +193,10 @@ points:
             bottom.key:
               led_prev: LED_1
               led_next: LED_2
+
       rows:
+        number:
+          row_net: R4
         bottom:
           row_net: R2
         home:
@@ -970,6 +976,18 @@ pcbs:
           BAT_N: GND
           reversible: true
           include_courtyard: false
+        adjust:
+          shift: [0.5 ks + 7.25, 0.375 kp -45.25]
+          rotate: 90
+      encoder_rotary:  
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: matrix_inner_top
+        params:
+          S1: C5
+          S2: R2
+          A: 
+          B: GND
+          C: 
         adjust:
           shift: [0.5 ks + 7.25, 0.375 kp -45.25]
           rotate: 90
